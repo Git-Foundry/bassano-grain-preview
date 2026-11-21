@@ -20,3 +20,6 @@ nav a,.quote label{font:600 1rem/1.4 PrairieSans,sans-serif;letter-spacing:.015e
 .biog>div{border-top:2px solid #173728;padding-top:20px}.biog h1+p{font:600 .9rem/1.4 PrairieSans;letter-spacing:.08em;text-transform:uppercase}
 
 @media(max-width:760px){.catalog .tile{font-size:1.45rem}.hero .row{align-items:start}}
+.draft-help{grid-column:1/-1;margin-top:1rem;padding:1rem;border:1px solid #879586}.draft-help[hidden]{display:none}.draft-help textarea{display:block;width:100%;min-height:8rem}.draft-help textarea[hidden]{display:none}.draft-help button{margin:4px}#copy{background:transparent;color:#173728;border:1px solid #81907f}
+
+.buyer-note{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:7%;background:#e8e5d8}.buyer-note h2{max-width:12ch}.buyer-note p:first-child{margin-top:0}@media(max-width:760px){.buyer-note{grid-template-columns:1fr;gap:10px}}

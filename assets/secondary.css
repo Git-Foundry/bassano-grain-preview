@@ -22,3 +22,5 @@ main h2{font-size:clamp(1.85rem,3vw,3rem);line-height:1.1}
 .register dt,.register dd{margin:0;padding:12px 0}.register dt{font-weight:600}
 @media(max-width:760px){header{flex-wrap:wrap;gap:8px}header strong{font-size:22px}header .menub{display:block;background:#193d2d;color:white;padding:6px 12px;border:0;font:inherit}header nav{width:100%;display:grid;gap:12px;padding-block:8px}header nav[hidden]{display:none}main.worksheet,main.licence{padding-inline:7%}header nav a{min-height:30px}}
 @media(max-width:1023px){body:has(.worksheet){padding-bottom:72px}}
+
+.draft-help{grid-column:1/-1;margin-top:1rem;padding:1rem;border:1px solid #879586}.draft-help[hidden]{display:none}.draft-help textarea{display:block;width:100%;min-height:8rem}.draft-help textarea[hidden]{display:none}.draft-help button{margin:4px}#copy{background:transparent;color:#173728;border:1px solid #81907f}

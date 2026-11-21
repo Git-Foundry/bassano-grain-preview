@@ -1,0 +1,24 @@
+@font-face{font-family:SiteSans;src:url(sans.woff2);font-weight:400;font-display:swap}
+@font-face{font-family:SiteSans;src:url(semibold.woff2);font-weight:600;font-display:swap}
+@font-face{font-family:Wordmark;src:url(serif.woff2);font-weight:500;font-display:swap}
+body{margin:0;max-width:none;padding:0;font:400 clamp(1.06rem,1rem + .25vw,1.26rem)/1.55 SiteSans,Arial,sans-serif}
+header,footer{padding:16px 7%;border-color:#c4c6b6}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;position:sticky;top:0;z-index:3;background:#f9f7ee}
+header strong{font:500 26px Wordmark,Georgia,serif}header nav{display:flex;align-items:center;gap:24px;margin:0}
+header nav a{font:600 1rem/1.4 SiteSans,sans-serif;letter-spacing:.015em;text-decoration:none}
+header .menub{display:none}header a:hover,footer a:hover{text-decoration:underline}
+footer{border-top:1px solid #c4c6b6;font:1rem/1.6 SiteSans,sans-serif;margin-top:48px}
+.skip{position:fixed;top:-100px;z-index:5;background:white;padding:8px}.skip:focus{top:0}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #985f28;outline-offset:3px}
+main.worksheet,main.licence{display:block;max-width:1150px;margin:0 auto;padding:clamp(32px,5vw,72px) 7% 16px;box-sizing:content-box}
+main h1,main h2{font-family:Display,Georgia,serif;font-weight:400;letter-spacing:-.035em}
+main h1{font-size:clamp(3rem,6.5vw,6.2rem);line-height:1.03;margin:0 0 16px}
+main h2{font-size:clamp(1.85rem,3vw,3rem);line-height:1.1}
+.page-intro{margin-bottom:40px}.page-intro p{margin:0}
+.worksheet #terms{grid-column:1/-1}.worksheet #review{margin-top:24px;padding:clamp(18px,3vw,40px)}
+.worksheet #review pre{max-width:75ch;font-family:SiteSans,Arial}
+.licence>p,.licence>h2,.licence>dl{max-width:68ch}.licence>h2{margin:40px 0 12px}
+.register{display:grid;grid-template-columns:minmax(100px,1fr) 2fr;gap:0;margin:30px 0;padding:0}
+.register dt,.register dd{margin:0;padding:12px 0}.register dt{font-weight:600}
+@media(max-width:760px){header{flex-wrap:wrap;gap:8px}header strong{font-size:22px}header .menub{display:block;background:#193d2d;color:white;padding:6px 12px;border:0;font:inherit}header nav{width:100%;display:grid;gap:12px;padding-block:8px}header nav[hidden]{display:none}main.worksheet,main.licence{padding-inline:7%}header nav a{min-height:30px}}
+@media(max-width:1023px){body:has(.worksheet){padding-bottom:72px}}
